@@ -1,7 +1,8 @@
-
+ 
 
 #import "GLVideoFrameAppDelegate.h"
 #import "EAGLView.h"
+#import "MyViewController.h"
 
 @implementation GLVideoFrameAppDelegate
 
@@ -11,6 +12,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    MyViewController* vc = [[MyViewController alloc] init];
+    vc.videoBuffer = self.videoBuffer;
+    self.window.rootViewController = vc;
+    
+//    AddTaskViewController *add = [[AddTaskViewController alloc]
+//                                  initWithNibName:@"AddTaskView" bundle:nil];
+//    [self presentViewController:add animated:YES completion:nil];
+    
    // [glView startAnimation];
     return YES;
 }
@@ -35,6 +45,7 @@
     [window release];
     [glView release];
 
+    [_videoBuffer release];
     [super dealloc];
 }
 
