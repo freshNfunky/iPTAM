@@ -51,7 +51,7 @@ class Thread : public Runnable
    static Thread* getCurrent();
    
    //! Tell the current thread to sleep for milli milliseconds
-   static void sleep(unsigned int milli);
+   static void sleep(long milli);
 
    //! Tell the current thread to yield the processor.
    static void yield();

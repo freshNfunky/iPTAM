@@ -76,7 +76,7 @@ Thread* Thread::getCurrent()
 }
 
 /** Uses nanosleep. */
-void Thread::sleep(unsigned int milli) 
+void Thread::sleep(long milli)
 {
    struct timespec ts = { milli/1000, (milli%1000)*1000000 };
    nanosleep(&ts, 0);
