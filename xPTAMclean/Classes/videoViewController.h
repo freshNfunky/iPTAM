@@ -13,12 +13,19 @@
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
 
+
 #import "Camera.h"
+
+@class EAGLView;
+
+@class videoViewController;
 
 @interface videoViewController : UIViewController<CameraDelegate> {
 @private
     EAGLContext *context;
+    EAGLView *glView;
     Camera * camera;
     GLuint videoFrameTexture;
 }
+@property(nonatomic, retain) /*IBOutlet*/ EAGLView *glView;
 @end

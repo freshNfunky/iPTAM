@@ -13,8 +13,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   // [glView startAnimation];
+     NSLog(@"Hello world");
+    CGRect viewRect = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:viewRect];
+    
+    self.viewController = [[videoViewController alloc] init];
     self.window.rootViewController = self.viewController;
+    
+    [self.window makeKeyAndVisible];
+   
+    
     return YES;
     //self.window.rootViewController = navigationController;
 }
@@ -36,9 +44,8 @@
 
 - (void)dealloc
 {
-    [window release];
-    [glView release];
-
+    [_window release];
+    [_viewController release];
     [super dealloc];
     
 }

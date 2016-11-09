@@ -19,6 +19,21 @@
 
 @synthesize context;
 
+- (void)loadView
+{
+    self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+}
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    glView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
+    glView.userInteractionEnabled=YES;
+    [self.view addSubview:glView];
+}
+
 - (void)awakeFromNib
 {
     EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
