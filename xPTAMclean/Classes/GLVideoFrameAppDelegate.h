@@ -14,8 +14,8 @@
 }
 
 @property (nonatomic, retain) /*IBOutlet*/ UIWindow *window;
-@property(nonatomic, retain) /*IBOutlet*/ EAGLView *glView;
-@property (nonatomic,retain) IBOutlet UILabel *userString;
+@property (nonatomic, retain) /*IBOutlet*/ EAGLView *glView;
+@property (nonatomic, retain) IBOutlet UILabel *userString;
 @property (nonatomic, retain) /*IBOutlet*/ videoViewController *viewController;
 
 @end

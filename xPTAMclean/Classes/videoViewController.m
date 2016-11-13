@@ -21,7 +21,7 @@
 
 - (void)loadView
 {
-    self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.glView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 }
 
 -(void)viewDidLoad
@@ -31,7 +31,7 @@
     glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     glView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
     glView.userInteractionEnabled=YES;
-    [self.view addSubview:glView];
+    [self.glView addSubview:glView];
 }
 
 - (void)awakeFromNib
@@ -46,8 +46,8 @@
 	self.context = aContext;
 	[aContext release];
 	
-    [(EAGLView *)self.view setContext:context];
-    [(EAGLView *)self.view setFramebuffer];
+    [(EAGLView *)self.glView setContext:context];
+    [(EAGLView *)self.glView setFramebuffer];
 
     glGenTextures(1, &videoFrameTexture);
     glBindTexture(GL_TEXTURE_2D, videoFrameTexture);
@@ -137,7 +137,7 @@
     glDisableClientState(GL_TEXTURE_COORD_ARRAY);
     glDisable(GL_TEXTURE_2D);
     
-    [(EAGLView *)self.view presentFramebuffer];
+    [(EAGLView *)self.glView presentFramebuffer];
 }
 
 - (void)processNewCameraFrame:(CVImageBufferRef)cameraFrame;

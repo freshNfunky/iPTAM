@@ -57,7 +57,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </window>
         <customObject id="17" customClass="MyVideoBuffer"/>
-        <viewController nibName="videoViewController" wantsFullScreenLayout="YES" id="XWr-nj-bHQ" customClass="videoViewController">
+        <viewController nibName="videoViewController" wantsFullScreenLayout="YES" id="XWr-nj-bHQ">
             <extendedEdge key="edgesForExtendedLayout"/>
             <nil key="simulatedStatusBarMetrics"/>
         </viewController>
