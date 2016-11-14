@@ -16,9 +16,14 @@
             <connections>
                 <outlet property="glView" destination="8" id="9"/>
                 <outlet property="userString" destination="19" id="21"/>
+                <outlet property="viewController" destination="2" id="11"/>
                 <outlet property="window" destination="2" id="5"/>
             </connections>
         </customObject>
+        <viewController nibName="videoViewController" wantsFullScreenLayout="YES" id="luU-lk-N82" customClass="videoViewController">
+            <extendedEdge key="edgesForExtendedLayout"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </viewController>
         <window clearsContextBeforeDrawing="NO" contentMode="scaleToFill" visibleAtLaunch="YES" id="2">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,10 +62,6 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </window>
         <customObject id="17" customClass="MyVideoBuffer"/>
-        <viewController nibName="videoViewController" wantsFullScreenLayout="YES" id="XWr-nj-bHQ" customClass="videoViewController">
-            <extendedEdge key="edgesForExtendedLayout"/>
-            <nil key="simulatedStatusBarMetrics"/>
-        </viewController>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -46,8 +46,8 @@
 	self.context = aContext;
 	[aContext release];
 	
-    [(EAGLView *)self.view setContext:context];
-    [(EAGLView *)self.view setFramebuffer];
+    [(EAGLView *)self.glView setContext:context];
+    [(EAGLView *)self.glView setFramebuffer];
 
     glGenTextures(1, &videoFrameTexture);
     glBindTexture(GL_TEXTURE_2D, videoFrameTexture);

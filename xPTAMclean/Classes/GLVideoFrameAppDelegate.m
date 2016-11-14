@@ -13,18 +13,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-     NSLog(@"Hello world");
-    CGRect viewRect = [[UIScreen mainScreen] bounds];
-    self.window = [[UIWindow alloc] initWithFrame:viewRect];
+    NSArray *windows = [[UIApplication sharedApplication] windows];
+    for(UIWindow *rwindow in windows) {
+        NSLog(@"window: %@",window.description);
+        if(rwindow.rootViewController == nil){
+            //UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+            rwindow.rootViewController = _viewController;
+        }
+    }
     
-    self.viewController = [[videoViewController alloc] init];
-    self.window.rootViewController = self.viewController;
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
+    //UIViewController *viewController = _viewController; // determine the initial view controller here and instantiate it with [storyboard instantiateViewControllerWithIdentifier:];
+    UIViewController *viewController = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    
+    self.window.rootViewController = viewController;//making a view to root view
     [self.window makeKeyAndVisible];
-   
     
     return YES;
-    //self.window.rootViewController = navigationController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

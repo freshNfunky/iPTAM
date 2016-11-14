@@ -13,10 +13,10 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1E72B5D51DC140AF002B745B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5D41DC140AF002B745B /* Default-568h@2x.png */; };
 		1E72B5D71DC140C7002B745B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5D61DC140C7002B745B /* Images.xcassets */; };
-		1E72B5E51DD13F92002B745B /* videoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5E41DD13F92002B745B /* videoViewController.xib */; };
 		1E72B5E71DD14142002B745B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5E61DD14142002B745B /* MainWindow.xib */; };
-		1E72B5EA1DD2771D002B745B /* videoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E72B5E91DD2771D002B745B /* videoViewController.m */; };
 		1E72B5ED1DD278A3002B745B /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E72B5EC1DD278A3002B745B /* Camera.m */; };
+		1EFE008B1DD9235800B47DA2 /* videoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE00891DD9235800B47DA2 /* videoViewController.m */; };
+		1EFE008D1DD9236200B47DA2 /* videoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE008C1DD9236200B47DA2 /* videoViewController.xib */; };
 		2514C27210084DB100A42282 /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514C26E10084DB100A42282 /* ES1Renderer.m */; };
 		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
@@ -72,12 +72,12 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E72B5D41DC140AF002B745B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1E72B5D61DC140C7002B745B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = xPTAM/Images.xcassets; sourceTree = "<group>"; };
-		1E72B5E41DD13F92002B745B /* videoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = videoViewController.xib; sourceTree = "<group>"; };
 		1E72B5E61DD14142002B745B /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		1E72B5E81DD2771D002B745B /* videoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoViewController.h; sourceTree = "<group>"; };
-		1E72B5E91DD2771D002B745B /* videoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoViewController.m; sourceTree = "<group>"; };
 		1E72B5EB1DD278A3002B745B /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		1E72B5EC1DD278A3002B745B /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		1EFE00891DD9235800B47DA2 /* videoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoViewController.m; sourceTree = "<group>"; };
+		1EFE008A1DD9235800B47DA2 /* videoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoViewController.h; sourceTree = "<group>"; };
+		1EFE008C1DD9236200B47DA2 /* videoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = videoViewController.xib; sourceTree = "<group>"; };
 		2514C26D10084DB100A42282 /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
 		2514C26E10084DB100A42282 /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
 		2514C27110084DB100A42282 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
@@ -255,10 +255,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE00891DD9235800B47DA2 /* videoViewController.m */,
+				1EFE008A1DD9235800B47DA2 /* videoViewController.h */,
 				1E72B5EB1DD278A3002B745B /* Camera.h */,
 				1E72B5EC1DD278A3002B745B /* Camera.m */,
-				1E72B5E81DD2771D002B745B /* videoViewController.h */,
-				1E72B5E91DD2771D002B745B /* videoViewController.m */,
 				C2B91C6012849431003B77EE /* teapot.h */,
 				2514C26D10084DB100A42282 /* ES1Renderer.h */,
 				2514C26E10084DB100A42282 /* ES1Renderer.m */,
@@ -309,8 +309,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE008C1DD9236200B47DA2 /* videoViewController.xib */,
 				1E72B5E61DD14142002B745B /* MainWindow.xib */,
-				1E72B5E41DD13F92002B745B /* videoViewController.xib */,
 				1E72B5D61DC140C7002B745B /* Images.xcassets */,
 				AFD717FF11AD99FA00C83845 /* Icon-Small.png */,
 				AFD7180011AD99FA00C83845 /* Icon.png */,
@@ -583,7 +583,7 @@
 				AFD7180111AD99FA00C83845 /* Icon-Small.png in Resources */,
 				AFD7180211AD99FA00C83845 /* Icon.png in Resources */,
 				1E72B5D71DC140C7002B745B /* Images.xcassets in Resources */,
-				1E72B5E51DD13F92002B745B /* videoViewController.xib in Resources */,
+				1EFE008D1DD9236200B47DA2 /* videoViewController.xib in Resources */,
 				1E72B5D51DC140AF002B745B /* Default-568h@2x.png in Resources */,
 				AFD7181A11AD9B6100C83845 /* iTunesArtwork in Resources */,
 			);
@@ -616,6 +616,7 @@
 				C2D170DD12378C9F00AE4C3F /* slower_corner_9.cxx in Sources */,
 				C2D170DE12378C9F00AE4C3F /* synchronized.cpp in Sources */,
 				C2D170DF12378C9F00AE4C3F /* thread.cpp in Sources */,
+				1EFE008B1DD9235800B47DA2 /* videoViewController.m in Sources */,
 				C2D170E012378C9F00AE4C3F /* utility_byte_differences.cc in Sources */,
 				C2D170E112378C9F00AE4C3F /* utility_double_int.cc in Sources */,
 				C2D170E212378C9F00AE4C3F /* utility_float.cc in Sources */,
@@ -627,7 +628,6 @@
 				C2D171771237994700AE4C3F /* Map.cc in Sources */,
 				C2D171781237994700AE4C3F /* MapMaker.cc in Sources */,
 				C2D171791237994700AE4C3F /* MapPoint.cc in Sources */,
-				1E72B5EA1DD2771D002B745B /* videoViewController.m in Sources */,
 				C2D1717B1237994700AE4C3F /* MiniPatch.cc in Sources */,
 				C2D1717C1237994700AE4C3F /* PatchFinder.cc in Sources */,
 				C2D1717D1237994700AE4C3F /* Relocaliser.cc in Sources */,
