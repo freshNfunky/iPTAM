@@ -1182,11 +1182,6 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				TargetAttributes = {
-					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 9NP2WK3L58;
-					};
-				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "xPTAM" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -1350,6 +1345,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WE3J9L5VM3;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1357,7 +1353,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "xPTAM-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dspeiser.xPTAM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshNfunky.xPTAM;
 				PRODUCT_NAME = xPTAM;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1371,12 +1367,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = WE3J9L5VM3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = xPTAM_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "xPTAM-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dspeiser.xPTAM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshNfunky.xPTAM;
 				PRODUCT_NAME = xPTAM;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
