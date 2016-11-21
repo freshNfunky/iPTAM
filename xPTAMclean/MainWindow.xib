@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
@@ -16,6 +15,7 @@
             <connections>
                 <outlet property="glView" destination="8" id="9"/>
                 <outlet property="userString" destination="19" id="21"/>
+                <outlet property="videoBuffer" destination="17" id="W0S-GV-7aM"/>
                 <outlet property="window" destination="2" id="5"/>
             </connections>
         </customObject>
@@ -24,47 +24,40 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8" customClass="EAGLView">
-                    <frame key="frameInset"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <button opaque="NO" alpha="0.019999999552965164" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14">
-                            <frame key="frameInset" width="320" height="480"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                            <state key="normal" title="ddd">
-                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <state key="highlighted">
-                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DEBUGGER" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="19">
+                            <rect key="frame" x="7" y="414" width="307" height="63"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <size key="shadowOffset" width="0.0" height="1"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GSz-j9-cKW">
+                            <rect key="frame" x="85" y="49" width="151" height="122"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Space bar">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="pressButton" destination="17" eventType="touchDown" id="18"/>
+                                <action selector="pressButton" destination="17" eventType="touchUpInside" id="58M-VI-cun"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="DEBUGGER" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="19">
-                            <frame key="frameInset" minX="20" minY="397" width="280" height="63"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </label>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </window>
-        <customObject id="17" customClass="MyVideoBuffer"/>
-        <viewController nibName="videoViewController" wantsFullScreenLayout="YES" id="XWr-nj-bHQ">
-            <extendedEdge key="edgesForExtendedLayout"/>
-            <nil key="simulatedStatusBarMetrics"/>
-        </viewController>
+        <customObject id="17" customClass="MyVideoBuffer">
+            <connections>
+                <outlet property="labelStatus" destination="19" id="Kbd-6K-pzK"/>
+            </connections>
+        </customObject>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
-    </simulatedMetricsContainer>
 </document>
