@@ -188,7 +188,7 @@ void Tracker::TrackFrame(Image<byte> &imFrame, uint textureHandle, bool bDraw)
 
 	
 	// Decide what to do - if there is a map, try to track the map ...
-	if(mMap.IsGood())
+	if (mMap.IsGood())
     {
 		if(mnLostFrames < 3)  // .. but only if we're not lost!
 		{

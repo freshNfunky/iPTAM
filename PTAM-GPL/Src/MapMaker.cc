@@ -9,6 +9,7 @@
 #include <cvd/vector_image_ref.h>
 #include <cvd/vision.h>
 #include <cvd/image_interpolate.h>
+#include <cvd/timer.h>
 
 #include <TooN/SVD.h>
 #include <TooN/SymEigen.h>
@@ -25,6 +26,14 @@
 using namespace CVD;
 using namespace std;
 using namespace GVars3;
+
+
+// ----------------- Constants:
+#define MAPBUILD_TIMEOUT 20 // Seconds
+
+//-----------------------------
+
+
 
 // Constructor sets up internal reference variable to Map.
 // Most of the intialisation is done by Reset()..
@@ -328,8 +337,14 @@ bool MapMaker::InitFromStereo(KeyFrame &kF,
   mbBundleConverged_Full = false;
   mbBundleConverged_Recent = false;
   
+  double clock_Time = CVD::timer.get_time();
+    
   while(!mbBundleConverged_Full)
     {
+     if ((CVD::timer.get_time() - clock_Time) > MAPBUILD_TIMEOUT) {
+        mbResetRequested = true; // timeout if map fails to build till timeout
+        cout << "  MapMaker: calculation stalled, try again" << endl;
+      }
       BundleAdjustAll();
       if(mbResetRequested)
 	return false;

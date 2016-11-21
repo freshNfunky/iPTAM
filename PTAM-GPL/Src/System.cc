@@ -40,9 +40,10 @@ System::System()
   mpMap = new Map;
   mpMapMaker = new MapMaker(*mpMap, *mpCamera);
   mpTracker = new Tracker(s, *mpCamera, *mpMap, *mpMapMaker);
- // mpARDriver = new ARDriver(*mpCamera, s, mGLWindow);
- // mpMapViewer = new MapViewer(*mpMap, mGLWindow);
-    
+// mpARDriver = new ARDriver(*mpCamera, s, mGLWindow);
+// mpMapViewer = new MapViewer(*mpMap, mGLWindow);
+ 
+
   mbDone = false;
 };
 
@@ -73,7 +74,7 @@ std::string System::doOneFrame(unsigned char *bwImage,uint hnd)
       mGLWindow.SetupVideoOrtho();
       mGLWindow.SetupVideoRasterPosAndZoom();*/
       
-      if(!mpMap->IsGood())
+      if (true) //(!mpMap->IsGood())
 	//mpARDriver->Reset();
    //    bool bDrawMap = mpMap->IsGood() && *gvnDrawMap;
     //  bool bDrawAR = mpMap->IsGood() && *gvnDrawAR;

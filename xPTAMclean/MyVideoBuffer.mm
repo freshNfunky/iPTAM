@@ -224,7 +224,7 @@ CVD::Image<CVD::byte> mimFrameBW;
 	static int SKIP=1;
 	static int skippedFrames=0;
 	
-	if (0) {
+	if (false) {
 		glBindTexture(GL_TEXTURE_2D, m_textureHandle);
 		glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, videoDimensions.width, videoDimensions.height, GL_LUMINANCE, GL_UNSIGNED_BYTE, bwImage);
 		[self renderCameraToSprite:m_textureHandle];
@@ -234,7 +234,7 @@ CVD::Image<CVD::byte> mimFrameBW;
 			std::string status = ptam->doOneFrame(bwImage,m_textureHandle);
 			((GLVideoFrameAppDelegate*)[UIApplication sharedApplication].delegate).userString.text=[NSString stringWithCString:status.c_str() encoding:NSUTF8StringEncoding];
 			
-			//[self renderTeapot:ptam.getCurrentPose()];
+			// [self renderTeapot:ptam.getCurrentPose()];
 			//[self renderTeapot:pos];
 			// This application only creates a single color renderbuffer which is already bound at this point.
 			// This call is redundant, but needed if dealing with multiple renderbuffers.
