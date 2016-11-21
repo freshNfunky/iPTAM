@@ -11,6 +11,12 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1E72B5D51DC140AF002B745B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5D41DC140AF002B745B /* Default-568h@2x.png */; };
+		1E72B5D71DC140C7002B745B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5D61DC140C7002B745B /* Images.xcassets */; };
+		1E72B5E51DD13F92002B745B /* videoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5E41DD13F92002B745B /* videoViewController.xib */; };
+		1E72B5E71DD14142002B745B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E72B5E61DD14142002B745B /* MainWindow.xib */; };
+		1E72B5EA1DD2771D002B745B /* videoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E72B5E91DD2771D002B745B /* videoViewController.m */; };
+		1E72B5ED1DD278A3002B745B /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E72B5EC1DD278A3002B745B /* Camera.m */; };
 		2514C27210084DB100A42282 /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514C26E10084DB100A42282 /* ES1Renderer.m */; };
 		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
@@ -138,6 +144,14 @@
 		1D3623250D0F684500981E51 /* GLVideoFrameAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVideoFrameAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* xPTAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xPTAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E72B5D41DC140AF002B745B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1E72B5D61DC140C7002B745B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = xPTAM/Images.xcassets; sourceTree = "<group>"; };
+		1E72B5E41DD13F92002B745B /* videoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = videoViewController.xib; sourceTree = "<group>"; };
+		1E72B5E61DD14142002B745B /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		1E72B5E81DD2771D002B745B /* videoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoViewController.h; sourceTree = "<group>"; };
+		1E72B5E91DD2771D002B745B /* videoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoViewController.m; sourceTree = "<group>"; };
+		1E72B5EB1DD278A3002B745B /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		1E72B5EC1DD278A3002B745B /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		2514C26D10084DB100A42282 /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
 		2514C26E10084DB100A42282 /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
 		2514C27110084DB100A42282 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
@@ -541,6 +555,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1E72B5EB1DD278A3002B745B /* Camera.h */,
+				1E72B5EC1DD278A3002B745B /* Camera.m */,
+				1E72B5E81DD2771D002B745B /* videoViewController.h */,
+				1E72B5E91DD2771D002B745B /* videoViewController.m */,
 				C2B91C6012849431003B77EE /* teapot.h */,
 				2514C26D10084DB100A42282 /* ES1Renderer.h */,
 				2514C26E10084DB100A42282 /* ES1Renderer.m */,
@@ -566,10 +584,15 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				4E30E01E184F6A6C004C8CBF /* gvars */,
 				4E30DC38184F61BD004C8CBF /* libcvd */,
 				4E30DDCC184F61BE004C8CBF /* PTAM-GPL */,
 				4E30DE0E184F61BE004C8CBF /* TooN */,
+=======
+				1E72B5D41DC140AF002B745B /* Default-568h@2x.png */,
+				C2D1713C1237994700AE4C3F /* iPTAM */,
+>>>>>>> master
 				080E96DDFE201D6D7F000001 /* Classes */,
 				E0D55FF11198D038006E5CBE /* MyVideoBuffer.h */,
 				E0D55FF21198D038006E5CBE /* MyVideoBuffer.mm */,
@@ -595,6 +618,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E72B5E61DD14142002B745B /* MainWindow.xib */,
+				1E72B5E41DD13F92002B745B /* videoViewController.xib */,
+				1E72B5D61DC140C7002B745B /* Images.xcassets */,
 				AFD717FF11AD99FA00C83845 /* Icon-Small.png */,
 				AFD7180011AD99FA00C83845 /* Icon.png */,
 				8D1107310486CEB800E47090 /* xPTAM-Info.plist */,
@@ -1208,12 +1234,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				1E72B5E71DD14142002B745B /* MainWindow.xib in Resources */,
+>>>>>>> master
 				AFD7180111AD99FA00C83845 /* Icon-Small.png in Resources */,
 				963B0D0B1CD0436D00C4D136 /* MyViewController.xib in Resources */,
 				4EB7B0A8184E2ED70036BBE1 /* MainWindow.xib in Resources */,
 				4E30E06A184F6A6C004C8CBF /* GVars2.h.historic in Resources */,
 				4E30DFAD184F61BE004C8CBF /* settings.cfg in Resources */,
 				AFD7180211AD99FA00C83845 /* Icon.png in Resources */,
+				1E72B5D71DC140C7002B745B /* Images.xcassets in Resources */,
+				1E72B5E51DD13F92002B745B /* videoViewController.xib in Resources */,
+				1E72B5D51DC140AF002B745B /* Default-568h@2x.png in Resources */,
 				AFD7181A11AD9B6100C83845 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1303,6 +1336,7 @@
 				4E30DEE7184F61BE004C8CBF /* fast_8_detect.cxx in Sources */,
 				4E30DEEC184F61BE004C8CBF /* fast_corner_9_nonmax.cxx in Sources */,
 				E0D55FF31198D038006E5CBE /* MyVideoBuffer.mm in Sources */,
+<<<<<<< HEAD
 				4E30DEE3184F61BE004C8CBF /* fast_12_detect.cxx in Sources */,
 				4E30DF4A184F61BE004C8CBF /* slower_corner_12.cxx in Sources */,
 				4E30DF30184F61BE004C8CBF /* convolve_gaussian.cc in Sources */,
@@ -1332,6 +1366,42 @@
 				4E30DF3E184F61BE004C8CBF /* yuv422_wrapper.cc in Sources */,
 				4E30DF57184F61BE004C8CBF /* timeddiskbuffer.cc in Sources */,
 				4E30DF2C184F61BE004C8CBF /* morphology.cc in Sources */,
+=======
+				C2D170D112378C9F00AE4C3F /* convolution.cc in Sources */,
+				C2D170D212378C9F00AE4C3F /* convolve_gaussian.cc in Sources */,
+				C2D170D312378C9F00AE4C3F /* cvd_timer.cc in Sources */,
+				C2D170D412378C9F00AE4C3F /* fast_10_detect.cxx in Sources */,
+				C2D170D512378C9F00AE4C3F /* fast_10_score.cxx in Sources */,
+				C2D170D612378C9F00AE4C3F /* fast_9_detect.cxx in Sources */,
+				C2D170D712378C9F00AE4C3F /* fast_9_score.cxx in Sources */,
+				C2D170D812378C9F00AE4C3F /* fast_corner.cxx in Sources */,
+				C2D170D912378C9F00AE4C3F /* fast_corner_9_nonmax.cxx in Sources */,
+				C2D170DA12378C9F00AE4C3F /* nonmax_suppression.cxx in Sources */,
+				C2D170DB12378C9F00AE4C3F /* posix_memalign.cpp in Sources */,
+				C2D170DC12378C9F00AE4C3F /* slower_corner_10.cxx in Sources */,
+				C2D170DD12378C9F00AE4C3F /* slower_corner_9.cxx in Sources */,
+				C2D170DE12378C9F00AE4C3F /* synchronized.cpp in Sources */,
+				C2D170DF12378C9F00AE4C3F /* thread.cpp in Sources */,
+				C2D170E012378C9F00AE4C3F /* utility_byte_differences.cc in Sources */,
+				C2D170E112378C9F00AE4C3F /* utility_double_int.cc in Sources */,
+				C2D170E212378C9F00AE4C3F /* utility_float.cc in Sources */,
+				C2D1716F1237994700AE4C3F /* ATANCamera.cc in Sources */,
+				C2D171701237994700AE4C3F /* Bundle.cc in Sources */,
+				1E72B5ED1DD278A3002B745B /* Camera.m in Sources */,
+				C2D171751237994700AE4C3F /* HomographyInit.cc in Sources */,
+				C2D171761237994700AE4C3F /* KeyFrame.cc in Sources */,
+				C2D171771237994700AE4C3F /* Map.cc in Sources */,
+				C2D171781237994700AE4C3F /* MapMaker.cc in Sources */,
+				C2D171791237994700AE4C3F /* MapPoint.cc in Sources */,
+				1E72B5EA1DD2771D002B745B /* videoViewController.m in Sources */,
+				C2D1717B1237994700AE4C3F /* MiniPatch.cc in Sources */,
+				C2D1717C1237994700AE4C3F /* PatchFinder.cc in Sources */,
+				C2D1717D1237994700AE4C3F /* Relocaliser.cc in Sources */,
+				C2D1717E1237994700AE4C3F /* ShiTomasi.cc in Sources */,
+				C2D1717F1237994700AE4C3F /* SmallBlurryImage.cc in Sources */,
+				C2D171801237994700AE4C3F /* System.cc in Sources */,
+				C2D171811237994700AE4C3F /* Tracker.cc in Sources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1342,8 +1412,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+>>>>>>> master
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = WE3J9L5VM3;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1364,8 +1440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+>>>>>>> master
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = WE3J9L5VM3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

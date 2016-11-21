@@ -9,6 +9,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "../PTAM-GPL/Src/Tracker.cc"
             timestampString = "500855047.89686"
             startingColumnNumber = "9223372036854775807"
@@ -129,6 +130,16 @@
             endingLineNumber = "190"
             landmarkName = "-captureOutput:didOutputSampleBuffer:fromConnection:"
             landmarkType = "7">
+=======
+            filePath = "main.m"
+            timestampString = "500763773.145697"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "main()"
+            landmarkType = "9">
+>>>>>>> master
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -137,6 +148,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "MyVideoBuffer.mm"
             timestampString = "501024355.367724"
             startingColumnNumber = "9223372036854775807"
@@ -160,6 +172,15 @@
             startingLineNumber = "843"
             endingLineNumber = "843"
             landmarkName = "MapMaker::BundleAdjust(set&lt;KeyFrame*&gt; sAdjustSet, set&lt;KeyFrame*&gt; sFixedSet, set&lt;MapPoint*&gt; sMapPoints, bool bRecent)"
+=======
+            filePath = "Classes/videoViewController.m"
+            timestampString = "500684923.954955"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-awakeFromNib"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -169,6 +190,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "../PTAM-GPL/Src/MapMaker.cc"
             timestampString = "501460821.897098"
             startingColumnNumber = "9223372036854775807"
@@ -255,12 +277,22 @@
             startingLineNumber = "211"
             endingLineNumber = "211"
             landmarkName = "-captureOutput:didOutputSampleBuffer:fromConnection:"
+=======
+            filePath = "Classes/GLVideoFrameAppDelegate.m"
+            timestampString = "500765597.917533"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -319,12 +351,25 @@
             startingLineNumber = "195"
             endingLineNumber = "195"
             landmarkName = "Tracker::TrackFrame(Image&lt;byte&gt; &amp;imFrame, uint textureHandle, bool bDraw)"
+=======
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/videoViewController.m"
+            timestampString = "500762261.690272"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "-drawFrame"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -335,6 +380,18 @@
             startingLineNumber = "234"
             endingLineNumber = "234"
             landmarkName = "Tracker::TrackFrame(Image&lt;byte&gt; &amp;imFrame, uint textureHandle, bool bDraw)"
+=======
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/videoViewController.m"
+            timestampString = "500762267.140495"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "-processNewCameraFrame:"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
